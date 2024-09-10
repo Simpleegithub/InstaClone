@@ -52,7 +52,7 @@ const updatePost = async () => {
   const handleDeletePost = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/v1/post/delete/${post._id}`,
+        `https://instaclone-az8q.onrender.com/api/v1/post/delete/${post._id}`,
         {}, // You need to pass an empty object if there's no body
         {
           withCredentials: true, // withCredentials should be inside this config object
@@ -73,7 +73,7 @@ const updatePost = async () => {
   const PostlikeDislike = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/v1/post/${post._id}/like`,
+        `https://instaclone-az8q.onrender.com/api/v1/post/${post._id}/like`,
         {
           withCredentials: true, // withCredentials should be inside the config object
         }
@@ -103,7 +103,7 @@ const updatePost = async () => {
 
   const addComment = async () => {
   try{
-    const res=await axios.post(`http://localhost:5000/api/v1/post/${post._id}/comment`,{
+    const res=await axios.post(`https://instaclone-az8q.onrender.com/api/v1/post/${post._id}/comment`,{
       text
     },{
       withCredentials:true,
@@ -138,7 +138,7 @@ const updatePost = async () => {
 
   const bookmarkPost = async () => {
     try{
-      const res=await axios.get(`http://localhost:5000/api/v1/post/${post._id}/bookmark`,{
+      const res=await axios.get(`https://instaclone-az8q.onrender.com/api/v1/post/${post._id}/bookmark`,{
         
         withCredentials:true,
       

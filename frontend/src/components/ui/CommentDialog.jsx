@@ -38,7 +38,7 @@ function CommentDialog({ open, setOpen,updatePost }) {
 
   const addComment = async () => {
     try{
-      const res=await axios.post(`http://localhost:5000/api/v1/post/${selectedPost._id}/comment`,{
+      const res=await axios.post(`https://instaclone-az8q.onrender.com/api/v1/post/${selectedPost._id}/comment`,{
         text
       },{
         withCredentials:true,

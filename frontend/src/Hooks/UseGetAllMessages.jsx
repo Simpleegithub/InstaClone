@@ -11,7 +11,7 @@ const UseGetAllMessages = () => {
     const fetchAllMessages = async () => {
       try {
        
-        const res = await axios.get(`http://localhost:5000/api/v1/message/all/${selectedUser.id || selectedUser._id}`,{
+        const res = await axios.get(`https://instaclone-az8q.onrender.com/api/v1/message/all/${selectedUser.id || selectedUser._id}`,{
         headers: {
           "Content-Type": "application/json",
         },

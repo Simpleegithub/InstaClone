@@ -32,7 +32,7 @@ useEffect(() => {
   const sendMessagesHandler = async (id) => {
 
     try {
-      const res = await axios.post(`http://localhost:5000/api/v1/message/send/${id}`,JSON.stringify({message:textMessages}),{
+      const res = await axios.post(`https://instaclone-az8q.onrender.com/api/v1/message/send/${id}`,JSON.stringify({message:textMessages}),{
         headers: {
            
             "Content-Type": "application/json",

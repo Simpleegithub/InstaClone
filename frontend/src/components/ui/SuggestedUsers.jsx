@@ -23,7 +23,7 @@ function SuggestedUsers({ users }) {
 
   const handleFollowUnFollow = async (id) => {
     try {
-      const res = await axios(`http://localhost:5000/api/v1/user/followOrunfollow/${id}`, {
+      const res = await axios(`https://instaclone-az8q.onrender.com/api/v1/user/followOrunfollow/${id}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
